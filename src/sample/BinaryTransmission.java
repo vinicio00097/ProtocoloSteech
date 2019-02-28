@@ -14,11 +14,11 @@ public class BinaryTransmission {
     private Integer wordCounter=1;
     private Integer letterCounter=0;
     private List<List<String>> operationsArray= Arrays.asList(
-            Arrays.asList("Inicio","SKAB1"),
-            Arrays.asList("Fin","SKYZ10"),
-            Arrays.asList("Si","#DH1"),
-            Arrays.asList("No","*DH0"),
-            Arrays.asList(" ","!DH3")
+            Arrays.asList("Inicio","WOEVM"),
+            Arrays.asList("Fin","MYYCR"),
+            Arrays.asList("Si","#NZD"),
+            Arrays.asList("No","*RLW"),
+            Arrays.asList(" ","IGGPP")
     );
     private Map<String,String> specialOperations=new HashMap<>(operationsArray.size());
 
@@ -42,10 +42,10 @@ public class BinaryTransmission {
         }else{
             letterCounter++;
             word.add(new TramaItem(
-                new SimpleStringProperty("P"+wordCounter.toString()),
+                new SimpleStringProperty("W"+wordCounter.toString()),
                 new SimpleStringProperty(Integer.toBinaryString(String.valueOf(wordToSend.charAt(counter)).codePointAt(0))),
                 new SimpleStringProperty(String.valueOf(wordToSend.charAt(counter))),
-                new SimpleStringProperty("T"+letterCounter.toString())
+                new SimpleStringProperty("L"+letterCounter.toString())
             ));
         }
 
